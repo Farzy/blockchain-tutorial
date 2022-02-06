@@ -13,5 +13,5 @@ def compute(zeros: int):
 
 
 if __name__ == '__main__':
-    for i in range(1, 6):
-        print(timeit.timeit(lambda n=i: print(compute(i)), number=1))
+    for i in range(1, 7):
+        print("Execution time: {:.8G}s".format(timeit.timeit(lambda n=i: print(compute(i)), number=1)))
